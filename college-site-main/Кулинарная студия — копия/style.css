@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: EB Garamond;
+    color: #4A4A4A;
+    background-color: #FAF6F0; 
+    /* line-height: 1.5; */
+     width: 1180px;
+      margin: 0 auto;
+}
+
+.container {
+    width: 2000px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Общие элементы */
+.title {
+    font-size: 3rem;
+    color: #3E4E42; 
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.logo-two{
+    color: #3E4E42;
+}
+
+.logo-two h3 {
+    /* 7 изменение размера шрифта */
+    font-size: 33px;
+}
+.btn {
+    display: inline-block;
+    /* 8 смена цвета кнопки */
+    background-color:  #acd9e2; 
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b3cbd1;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+
+.img-placeholder {
+    background-color: #E2ECE6; 
+    color: #7A8E81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    font-size: 0.9rem;
+    border-radius: 8px;
+    height: 100%;
+    min-height: 200px;
+    background-size: 100%;
+}
+
+
+.header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-bottom: 1px solid #EFEAE2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3E4E42;
+}
+
+.nav{
+    text-align: left;
+    width: 310px;
+    /* 12 изменение размера */
+    font-size: 28px;
+}
+.nav a {
+    color: #6C7A70;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    /* 4 смена цвета при наведении */
+    color:  #ddedf0;
+}
+
+/* Главный баннер */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-info h1 {
+    font-size: 2.5rem;
+    color: #3E4E42;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-info p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #6C7A70;
+}
+
+
+.about {
+    padding: 60px 0;
+    background-color: #F3EFE7;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 3px solid #fdf2bf;
+   
+}
+.feature-item:hover {
+     /* 10 тень при наведении */
+    box-shadow: 5px 5px 9px #ffe4bd;
+    transition: box-shadow 0.3s ease;
+    transform: translateY(-9px);
+    transform: translateX(-2px);
+    transition: translateX 0.3s ease;
+    transition: translateY 0.3s ease;
+
+}
+
+.feature-item h3 {
+    color: #3E4E42;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.classes {
+    padding: 60px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card:hover{
+     /* 11 тень при наведении */
+    box-shadow: 7px 7px 10px #b4c7ca;
+    transition: box-shadow 0.3s ease;
+}
+.card-image {
+    height: 200px;
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    color: #3E4E42;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #6C7A70;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-price {
+    font-weight: 600;
+    color: #3E4E42;
+    font-size: 1.1rem;
+}
+
+
+.contacts {
+    padding: 60px 0;
+    background-color: #E2ECE6; 
+}
+
+.contacts .title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contacts-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.contacts-text p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.contacts-box {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #EFEAE2;
+    border-radius: 6px;
+    font-family: EB Garamond;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #E8A598;
+}
+
+
+.footer {
+    background-color: #3E4E42;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+.it{
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    font-family: EB Garamond;
+    margin-bottom: 40px;
+    
+}
+
+.ir{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 0 auto;
+    width: 2000px;
+    padding-left: 170px;
+}
+
+.ir div{
+    /* 5 смена цвета блоков */
+    background-color: #dfdcd5;
+    width: 800px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.ir div:hover{
+    background-color: #ddedf0;
+}
+
+.ir div h3{
+    margin-bottom: 10px;
+}
